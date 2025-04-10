@@ -41,4 +41,6 @@ This project implements a noise monitoring system using LoRa technology in a rel
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/lora-relay-noise.git
+   git clone https://github.com/Hoangpro2802/lora-relay-noise.git
+
+
