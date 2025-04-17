@@ -57,7 +57,7 @@ Trình bày ngắn gọn:
 
 ## 🔧 Sơ Đồ Nguyên Lý và PCB
 
-- 📎 [Schematic (PDF)](Schematic_Lora.pdf)
+- 📎 [Schematic (PDF)](docs/Schematic_Lora.pdf)
 - 📎 [PCB Layout (Gerber)](docs/gerber.zip)
 - 📎 [File thiết kế (Eagle / KiCad)](docs/project.kicad_pcb)
 
