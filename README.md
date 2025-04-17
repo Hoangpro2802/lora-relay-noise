@@ -33,10 +33,10 @@ Trình bày ngắn gọn:
 
 | Thành phần     | Thông tin            |
 |----------------|----------------------|
-| MCU            | ESP32-WROOM-32       |
+| MCU            | ESP32S      |
 | Nguồn vào      | 5V qua USB hoặc DC   |
-| Kết nối        | WiFi, Bluetooth      |
-| Kích thước PCB | 60mm x 40mm          |
+| Kết nối        | WiFi, Lora      |
+| Kích thước PCB | 60mm x 70mm          |
 
 ---
 
@@ -44,11 +44,12 @@ Trình bày ngắn gọn:
 
 | Tên linh kiện            | Số lượng | Ghi chú                     |
 |--------------------------|----------|-----------------------------|
-| ESP32 DevKit v1          | 1        | Vi điều khiển chính         |
-| LED RGB WS2812 (12 LED)  | 1        | Vòng tròn hoặc dải LED      |
-| DHT11                    | 1        | Cảm biến nhiệt độ, độ ẩm    |
-| Biến trở 10kΩ            | 1        | Đầu vào tương tự            |
-| Nút nhấn                 | 4        | Điều khiển thủ công         |
+| ESP32S                   | 3        | Vi điều khiển chính         |
+| Module Lora Ra01         | 3        |                             |
+| LED xanh                 | 3        | Vòng tròn hoặc dải LED      |
+| MAX9814                  | 1        | Cảm biến nhiệt độ, độ ẩm    |
+| Module đọc MicroSD       | 1        | Đầu vào tương tự            |
+| Nút nhấn                 | 3        | Điều khiển thủ công         |
 
 *Có thể link đến file BOM.csv đầy đủ.*
 
