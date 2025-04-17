@@ -1,46 +1,87 @@
-# LoRa Relay Noise Monitoring System
+# 🔌 Tên Dự Án Phần Cứng
 
-This project implements a noise monitoring system using LoRa technology in a relay configuration with three nodes. It is designed to survey data transmission between nodes in a constrained space, ensuring data passes through each node sequentially rather than skipping directly from the source to the destination.
+> Mô tả ngắn gọn: Dự án gì? Làm gì? Dùng cho mục đích nào?
 
-## Project Overview
-- **Purpose**: Measure noise levels using a sound sensor, relay the data through intermediate nodes, and store it either locally (SD card) or online (Adafruit IO).
-- **Note**: This is **not a true LoRa mesh network**. Instead, it uses a linear relay approach (Node 1 → Node 2 → Node 3) to enforce sequential transmission in a small-scale experiment, preventing direct communication from Node 1 to Node 3 that would bypass Node 2.
+---
 
-### Components
-- **Node 1**: Collects noise data from a sound sensor, calculates dB, and sends it to Node 2 via LoRa.
-- **Node 2**: Acts as a relay, receiving data from Node 1 and forwarding it to Node 3 via LoRa.
-- **Node 3**: Receives data from Node 2, validates it, and logs it to an SD card and/or Adafruit IO via WiFi.
+## 📑 Mục Lục
 
-### Technologies
-- **LoRa**: 433 MHz frequency for wireless communication between nodes.
-- **ESP32**: Microcontroller platform for all nodes.
-- **WiFi**: Used by Node 3 to upload data to the cloud.
-- **SD Card**: Local storage on Node 3.
-- **Adafruit IO**: Cloud platform for real-time data visualization.
+- [Giới thiệu](#giới-thiệu)
+- [Thông số kỹ thuật](#thông-số-kỹ-thuật)
+- [Danh sách linh kiện](#danh-sách-linh-kiện)
+- [Sơ đồ nguyên lý và PCB](#sơ-đồ-nguyên-lý-và-pcb)
+- [Hướng dẫn lắp ráp](#hướng-dẫn-lắp-ráp)
+- [Lập trình firmware](#lập-trình-firmware)
+- [Cách sử dụng](#cách-sử-dụng)
+- [Kiểm thử](#kiểm-thử)
+- [Ảnh/Video demo](#ảnhvideo-demo)
+- [Đóng góp](#đóng-góp)
+- [Giấy phép](#giấy-phép)
 
-## Hardware Requirements
-- 3x ESP32 boards (e.g., ESP32 DevKit).
-- 1x Sound sensor (connected to Node 1, pin 39).
-- 3x LoRa modules (e.g., SX1278, 433 MHz).
-- 1x MicroSD card module (connected to Node 3).
-- Breadboards, jumper wires, and power supplies.
+---
 
-## Software Setup
-1. **Install Arduino IDE** and add ESP32 board support.
-2. **Libraries Required**:
-   - `SPI.h`
-   - `LoRa.h`
-   - `esp_task_wdt.h` (Node 1, Node 2)
-   - `WiFi.h`, `NTPClient.h`, `WiFiUdp.h`, `SD.h`, `HTTPClient.h`, `WiFiClientSecure.h` (Node 3)
-3. Upload the respective `.ino` files to each ESP32:
-   - `node1.ino` → Node 1
-   - `node2.ino` → Node 2
-   - `node3.ino` → Node 3
-4. Configure WiFi credentials and Adafruit IO keys in `node3.ino`.
+## 👋 Giới Thiệu
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Hoangpro2802/lora-relay-noise.git
+Trình bày ngắn gọn:
+- Dự án làm gì?
+- Ai là người dùng chính?
+- Mục tiêu của thiết kế (giáo dục, nghiên cứu, sản phẩm thương mại...)
 
+---
 
+## 📐 Thông Số Kỹ Thuật
+
+| Thành phần     | Thông tin            |
+|----------------|----------------------|
+| MCU            | ESP32-WROOM-32       |
+| Nguồn vào      | 5V qua USB hoặc DC   |
+| Kết nối        | WiFi, Bluetooth      |
+| Kích thước PCB | 60mm x 40mm          |
+
+---
+
+## 🧰 Danh Sách Linh Kiện
+
+| Tên linh kiện            | Số lượng | Ghi chú                     |
+|--------------------------|----------|-----------------------------|
+| ESP32 DevKit v1          | 1        | Vi điều khiển chính         |
+| LED RGB WS2812 (12 LED)  | 1        | Vòng tròn hoặc dải LED      |
+| DHT11                    | 1        | Cảm biến nhiệt độ, độ ẩm    |
+| Biến trở 10kΩ            | 1        | Đầu vào tương tự            |
+| Nút nhấn                 | 4        | Điều khiển thủ công         |
+
+*Có thể link đến file BOM.csv đầy đủ.*
+
+---
+
+## 🔧 Sơ Đồ Nguyên Lý và PCB
+
+- 📎 [Schematic (PDF)](docs/schematic.pdf)
+- 📎 [PCB Layout (Gerber)](docs/gerber.zip)
+- 📎 [File thiết kế (Eagle / KiCad)](docs/project.kicad_pcb)
+
+_Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
+
+![Schematic](docs/images/schematic.png)
+
+---
+
+## 🔩 Hướng Dẫn Lắp Ráp
+
+1. Hàn các linh kiện nhỏ trước: điện trở, tụ điện
+2. Hàn vi điều khiển hoặc socket
+3. Kiểm tra ngắn mạch bằng đồng hồ
+4. Cấp nguồn thử, kiểm tra dòng tiêu thụ
+5. Lập trình firmware để kiểm tra
+
+*Có thể link đến file hướng dẫn chi tiết hoặc video.*
+
+---
+
+## 💻 Lập Trình Firmware
+
+- **Ngôn ngữ:** C++ (Arduino) / MicroPython / PlatformIO
+- **Tải firmware:** `firmware/main.ino` hoặc `src/main.py`
+- **Cách nạp:**
+  ```bash
+  platformio run --target upload
