@@ -29,9 +29,9 @@
 
 | Thành phần     | Thông tin            |
 |----------------|----------------------|
-| MCU            | ESP32S      |
+| MCU            | ESP32S               |
 | Nguồn vào      | 5V qua USB hoặc DC   |
-| Kết nối        | WiFi, Lora      |
+| Kết nối        | WiFi, Lora           |
 | Kích thước PCB | 60mm x 70mm          |
 
 ---
@@ -41,13 +41,16 @@
 | Tên linh kiện            | Số lượng | Ghi chú                     |
 |--------------------------|----------|-----------------------------|
 | ESP32S                   | 3        | Vi điều khiển chính         |
-| Module Lora Ra01         | 3        |                             |
-| LED xanh                 | 3        | Vòng tròn hoặc dải LED      |
-| MAX9814                  | 1        | Cảm biến nhiệt độ, độ ẩm    |
-| Module đọc MicroSD       | 1        | Đầu vào tương tự            |
+| Module Lora Ra01         | 3        | Truyền dữ liệu              |
+| LED xanh                 | 3        | Đèn báo nguồn               |
+| MAX9814                  | 1        | Cảm biến âm thanh           |
+| Module đọc MicroSD       | 1        | Hỗ trợ ghi dữ liệu          |
 | Nút nhấn                 | 3        | Điều khiển thủ công         |
+|Tụ                        | 24       | Lọc nhiễu, là phẳng điện áp |
+|Trở                       | 6        | Hạn dòng, điện trở kéo      |
+|Jack nguồn DC             | 3        | Nguồn                       |
+|Jump                      | 3        | Cắm UART                    |
 
-*Có thể link đến file BOM.csv đầy đủ.*
 
 ---
 
@@ -55,7 +58,7 @@
 
 - 📎 [Schematic (PDF)](docs/Schematic_Lora.pdf)
 - 📎 [PCB Layout (Gerber)](docs/gerber.zip)
-- 📎 [File thiết kế (Eagle / KiCad)](docs/project.kicad_pcb)
+- 📎 [File thiết kế (Altium)](docs/project.kicad_pcb)
 
 _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
 
