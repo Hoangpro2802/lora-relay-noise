@@ -57,8 +57,8 @@
 ## 🔧 Sơ Đồ Nguyên Lý và PCB
 
 - 📎 [Schematic (PDF)](docs/Schematic_Lora.pdf)
-- 📎 [PCB Layout (Gerber)](docs/gerber.zip)
-- 📎 [File thiết kế (Altium)](docs/project.kicad_pcb)
+- 📎 [PCB Layout (Gerber)](docs/Gerber.zip)
+- 📎 [File thiết kế (Altium)](docs/fullprojectdesign.zip)
 
 _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
 
