@@ -102,7 +102,8 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 
 ## 🎞️ Ảnh/Video demo
 
-![DEMONODE3](docs/images/node3.mp4)
+https://github.com/Hoangpro2802/demovideo3/issues/1#issue-3006476790
+
 Xem thêm các video demo khác tại:
 - 📎 [DEMOVIDEO](docs/images)
 
