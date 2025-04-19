@@ -101,8 +101,7 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 
 
 ## 🎞️ Ảnh/Video demo
-
-https://github.com/Hoangpro2802/demovideo3/issues/1#issue-3006476790
+https://private-user-images.githubusercontent.com/156501341/435402061-04e07901-b8c4-47a6-8766-bfb23d1321f1.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDUwNzUwODMsIm5iZiI6MTc0NTA3NDc4MywicGF0aCI6Ii8xNTY1MDEzNDEvNDM1NDAyMDYxLTA0ZTA3OTAxLWI4YzQtNDdhNi04NzY2LWJmYjIzZDEzMjFmMS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQxOVQxNDU5NDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMDQwNTRlZjgzOWYzNGIxODNiZDE5ZWE0YjE0Y2U0M2MxOGZmYzcxOTgzMmQxMmI2ZWI0NDliZGNiMWQzZDhmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2w96RrguRFl_zu4LSO7ULRKF_O6pDouDRltqa7MFOOQ
 
 Xem thêm các video demo khác tại:
 - 📎 [DEMOVIDEO](docs/images)
