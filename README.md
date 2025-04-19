@@ -87,7 +87,7 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 
 - **Ngôn ngữ:** C++ (Arduino)
 - 📎 [SourceCode](Sourcecode)
-- **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Gi ữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
+- **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Giữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
   
 ## 📜 Cách sử dụng
 
