@@ -54,7 +54,7 @@
 
 ---
 
-## 🔧 Sơ Đồ Nguyên Lý và PCB
+# 🔧 Sơ Đồ Nguyên Lý và PCB
 
 - 📎 [Schematic (PDF)](docs/Schematic_Lora.pdf)
 - 📎 [PCB Layout (Gerber)](docs/Gerber.zip)
@@ -63,26 +63,50 @@
 _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
 
 ![Schematic](docs/images/Schematic_Lora.jpg)
+![PCB](docs/images/PCB.jpg)
+
 
 ---
 
 ## 🔩 Hướng Dẫn Lắp Ráp
 
-1. Bôi thiếc hàn lên tất cả các pad smd
-2. Đặt các linh kiện smd lên 
-3. Đặt ESP32S lên pad hàn
-4. Bôi thiếc hàn lên trên chân của ESP32
-5. Khò hàn tất cả cho đến khi thiếc chảy hết
-6. Hàn tiếp các linh kiện cắm bằng mũi hàn
-7. Kiểm tra bằng mắt, kết hợp đồng hồ đo
-8. Nạp firmware
+1. Bôi thiếc hàn lên tất cả các pad smd.
+2. Đặt các linh kiện smd lên. 
+3. Đặt ESP32S lên pad hàn.
+4. Bôi thiếc hàn lên trên chân của ESP32.
+5. Khò hàn tất cả cho đến khi thiếc chảy hết.
+6. Hàn tiếp các linh kiện cắm bằng mũi hàn.
+7. Kiểm tra bằng mắt, kết hợp đồng hồ đo.
+8. Nạp firmware.
 
 
 ---
 
 ## 💻 Lập Trình Firmware
 
-- **Ngôn ngữ:** C++ (Arduino) 
+- **Ngôn ngữ:** C++ (Arduino)
+- ![SourceCode](docs/code)
 - **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Gi ữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
-  ```bash
-  platformio run --target upload
+  
+## 📜 Cách sử dụng
+
+- Sau khi đã nạp xong firmware, ta sẽ cấp nguồn 5V cho cả 3 node.
+- Sau khi cấp nguồn thì nhấn nút EN/Reset trên cả 3 mạch.
+- Muốn xem log truyền tin giữa các node thì có thể cấp nguồn bằng UART.
+- Kiểm tra trên web Adafruit.io nếu đã nhận được dữ liệu đẩy lên thì mạch đã hoạt động đúng.
+
+## 💿 Kiểm thử
+
+
+
+
+## 🎞️ Ảnh/Video demo
+
+
+## 👐 Đóng góp
+
+## ©️ Giấy phép
+
+
+  
+
