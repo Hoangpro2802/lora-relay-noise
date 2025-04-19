@@ -45,6 +45,7 @@
 | LED xanh                 | 3        | Đèn báo nguồn               |
 | MAX9814                  | 1        | Cảm biến âm thanh           |
 | Module đọc MicroSD       | 1        | Hỗ trợ ghi dữ liệu          |
+| AMS1117-3.3              | 3        | Chuyển đổi điện áp
 | Nút nhấn                 | 3        | Điều khiển thủ công         |
 | Tụ [0.1uf,10uf,470uf]    | 24       | Lọc nhiễu, là phẳng điện áp |
 | Trở [5k1,10k]            | 6        | Hạn dòng, điện trở kéo      |
@@ -85,7 +86,7 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 ## 💻 Lập Trình Firmware
 
 - **Ngôn ngữ:** C++ (Arduino)
-- 📎 [SourceCode](Sourcecode/code)
+- 📎 [SourceCode](Sourcecode)
 - **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Gi ữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
   
 ## 📜 Cách sử dụng
@@ -98,6 +99,8 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 ## 💿 Kiểm thử
 
 ![WEB](docs/images/progress.png)
+![Mạch](docs/images/lora.jpg)
+
 
 
 ## 🎞️ Ảnh/Video demo
