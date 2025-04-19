@@ -54,7 +54,7 @@
 
 ---
 
-# 🔧 Sơ Đồ Nguyên Lý và PCB
+## 🔧 Sơ Đồ Nguyên Lý và PCB
 
 - 📎 [Schematic (PDF)](docs/Schematic_Lora.pdf)
 - 📎 [PCB Layout (Gerber)](docs/Gerber.zip)
@@ -85,7 +85,7 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 ## 💻 Lập Trình Firmware
 
 - **Ngôn ngữ:** C++ (Arduino)
-- ![SourceCode](docs/code)
+- 📎 [SourceCode](Sourcecode/code)
 - **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Gi ữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
   
 ## 📜 Cách sử dụng
@@ -96,6 +96,7 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 - Kiểm tra trên web Adafruit.io nếu đã nhận được dữ liệu đẩy lên thì mạch đã hoạt động đúng.
 
 ## 💿 Kiểm thử
+![WEB](docs/images/progress.jpg)
 
 
 
@@ -105,7 +106,14 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 
 ## 👐 Đóng góp
 
+Dự án được thực hiện với mục đích học tập và nghiên cứu. Mọi ý kiến đóng góp, đề xuất hoặc phản hồi đều được hoan nghênh. Nếu bạn muốn đóng góp, vui lòng tạo một Pull Request hoặc Issue để thảo luận thêm.
+
+
 ## ©️ Giấy phép
+
+Dự án này được phát hành dưới giấy phép MIT License. Bạn có thể tự do sử dụng, chỉnh sửa và phân phối lại với điều kiện giữ nguyên thông tin bản quyền.
+
+
 
 
   
