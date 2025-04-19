@@ -46,10 +46,10 @@
 | MAX9814                  | 1        | Cảm biến âm thanh           |
 | Module đọc MicroSD       | 1        | Hỗ trợ ghi dữ liệu          |
 | Nút nhấn                 | 3        | Điều khiển thủ công         |
-|Tụ                        | 24       | Lọc nhiễu, là phẳng điện áp |
-|Trở                       | 6        | Hạn dòng, điện trở kéo      |
-|Jack nguồn DC             | 3        | Nguồn                       |
-|Jump                      | 3        | Cắm UART                    |
+| Tụ                       | 24       | Lọc nhiễu, là phẳng điện áp |
+| Trở                      | 6        | Hạn dòng, điện trở kéo      |
+| Jack nguồn DC            | 3        | Nguồn                       |
+| Jump                     | 3        | Cắm UART                    |
 
 
 ---
@@ -62,26 +62,27 @@
 
 _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
 
-![Schematic](docs/images/schematic.png)
+![Schematic](docs/images/Schematic_Lora.jpg)
 
 ---
 
 ## 🔩 Hướng Dẫn Lắp Ráp
 
-1. Hàn các linh kiện nhỏ trước: điện trở, tụ điện
-2. Hàn vi điều khiển hoặc socket
-3. Kiểm tra ngắn mạch bằng đồng hồ
-4. Cấp nguồn thử, kiểm tra dòng tiêu thụ
-5. Lập trình firmware để kiểm tra
+1. Bôi thiếc hàn lên tất cả các pad smd
+2. Đặt các linh kiện smd lên 
+3. Đặt ESP32S lên pad hàn
+4. Bôi thiếc hàn lên trên chân của ESP32
+5. Khò hàn tất cả cho đến khi thiếc chảy hết
+6. Hàn tiếp các linh kiện cắm bằng mũi hàn
+7. Kiểm tra bằng mắt, kết hợp đồng hồ đo
+8. Nạp firmware
 
-*Có thể link đến file hướng dẫn chi tiết hoặc video.*
 
 ---
 
 ## 💻 Lập Trình Firmware
 
-- **Ngôn ngữ:** C++ (Arduino) / MicroPython / PlatformIO
-- **Tải firmware:** `firmware/main.ino` hoặc `src/main.py`
-- **Cách nạp:**
+- **Ngôn ngữ:** C++ (Arduino) 
+- **Cách nạp:** Sau khi đã compile thành công chương trình, bắt đầu nhấn nụt nạp trên Arduino IDE. Gi ữ nút boot trên board rồi đợi đến lúc IDE hiện chữ connecting...rồi nhấn và thả nút Reset.
   ```bash
   platformio run --target upload
