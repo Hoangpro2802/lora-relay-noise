@@ -46,8 +46,8 @@
 | MAX9814                  | 1        | Cảm biến âm thanh           |
 | Module đọc MicroSD       | 1        | Hỗ trợ ghi dữ liệu          |
 | Nút nhấn                 | 3        | Điều khiển thủ công         |
-| Tụ                       | 24       | Lọc nhiễu, là phẳng điện áp |
-| Trở                      | 6        | Hạn dòng, điện trở kéo      |
+| Tụ [0.1uf,10uf,470uf]    | 24       | Lọc nhiễu, là phẳng điện áp |
+| Trở [5k1,10k]            | 6        | Hạn dòng, điện trở kéo      |
 | Jack nguồn DC            | 3        | Nguồn                       |
 | Jump                     | 3        | Cắm UART                    |
 
@@ -63,7 +63,7 @@
 _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay tại đây:_
 
 ![Schematic](docs/images/Schematic_Lora.jpg)
-![PCB](docs/images/PCB.jpg)
+![PCB](docs/images/PCB.png)
 
 
 ---
@@ -96,12 +96,15 @@ _Hình minh họa sơ đồ nguyên lý hoặc board PCB có thể nhúng ngay t
 - Kiểm tra trên web Adafruit.io nếu đã nhận được dữ liệu đẩy lên thì mạch đã hoạt động đúng.
 
 ## 💿 Kiểm thử
-![WEB](docs/images/progress.jpg)
 
-
+![WEB](docs/images/progress.png)
 
 
 ## 🎞️ Ảnh/Video demo
+
+![DEMONODE3](docs/images/node3.mp4)
+Xem thêm các video demo khác tại:
+- 📎 [DEMOVIDEO](docs/images)
 
 
 ## 👐 Đóng góp
